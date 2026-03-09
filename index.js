@@ -12,15 +12,39 @@ document.addEventListener('DOMContentLoaded', () => {
 async function loadSkills() {
     try {
         const response = await fetch('data/skills.json');
-        const skills = await response.json();
+        const categories = await response.json();
         const container = document.getElementById('skills-grid');
 
         if (!container) return;
+        
+        // Change the container class to match the new grid style
+        container.className = 'skills-category-grid';
 
-        skills.forEach(skill => {
+        categories.forEach(cat => {
             const card = document.createElement('div');
-            card.className = 'skill-card-new';
-            card.innerHTML = `<i class="${skill.icon}"></i> <span>${skill.name}</span>`;
+            card.className = 'skill-category-card glass';
+            
+            let skillsHtml = '';
+            cat.skills.forEach(skill => {
+                skillsHtml += `
+                    <div class="skill-pill-new">
+                        <i class="${skill.icon}"></i>
+                        <span>${skill.name}</span>
+                    </div>
+                `;
+            });
+
+            card.innerHTML = `
+                <div class="category-header">
+                    <div class="category-icon" style="color: ${cat.iconColor}; background: ${cat.iconColor}20;">
+                        <i class="${cat.icon}"></i>
+                    </div>
+                    <h3>${cat.category}</h3>
+                </div>
+                <div class="category-skills">
+                    ${skillsHtml}
+                </div>
+            `;
             container.appendChild(card);
         });
     } catch (error) {

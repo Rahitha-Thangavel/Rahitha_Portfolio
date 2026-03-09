@@ -888,73 +888,94 @@ h4 {
     padding: 100px 0;
 }
 
-.skills-grid {
+.skills-category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
     margin-top: 3rem;
 }
 
-.skill-card-new {
-    background: rgba(13, 17, 28, 0.6);
+.skill-category-card {
+    background: rgba(13, 17, 28, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+}
+
+.skill-category-card:hover {
+    background: rgba(18, 24, 43, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.category-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    font-size: 1.5rem;
 }
 
-/* Subtle glow behind card */
-.skill-card-new::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    height: 60%;
-    background: var(--primary-gradient);
-    filter: blur(50px);
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease;
-    z-index: 0;
+.category-header h3 {
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
 }
 
-.skill-card-new:hover::before {
-    opacity: 0.15;
+.category-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.skill-card-new i {
-    font-size: 3.5rem;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 1;
+.skill-pill-new {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-/* Devicon applies colors automatically if 'colored' class is present */
-.skill-card-new span {
-    font-size: 1rem;
+.skill-pill-new i {
+    font-size: 1.2rem;
+}
+
+.skill-pill-new span {
+    font-size: 0.95rem;
     font-weight: 500;
     color: #e2e8f0;
-    letter-spacing: 0.5px;
-    z-index: 1;
 }
 
-.skill-card-new:hover {
-    transform: translateY(-8px);
-    background: rgba(30, 41, 59, 0.6);
-    border-color: rgba(255, 0, 128, 0.5); /* Primary pink highlight */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+.skill-pill-new:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
-.skill-card-new:hover i {
-    transform: scale(1.15);
+@media (max-width: 768px) {
+    .skills-category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-category-card {
+        padding: 1.5rem;
+    }
 }
 
 .projects-grid {
