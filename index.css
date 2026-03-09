@@ -1890,9 +1890,8 @@ h4 {
 
     .navbar {
         padding: 1rem 1.2rem;
-        width: 100vw;
+        width: 100%;
         box-sizing: border-box;
-        overflow-x: hidden;
     }
 
     .nav-links {
