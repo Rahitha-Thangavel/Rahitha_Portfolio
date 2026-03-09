@@ -351,12 +351,25 @@ function animate() {
 function initMobileMenu() {
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
 
     if (toggle) {
+        // Toggle menu on hamburger click
         toggle.addEventListener('click', () => {
             nav.classList.toggle('active');
             toggle.querySelector('i').classList.toggle('fa-bars');
             toggle.querySelector('i').classList.toggle('fa-xmark');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    toggle.querySelector('i').classList.add('fa-bars');
+                    toggle.querySelector('i').classList.remove('fa-xmark');
+                }
+            });
         });
     }
 }
