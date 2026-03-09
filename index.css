@@ -1890,6 +1890,9 @@ h4 {
 
     .navbar {
         padding: 1rem 1.2rem;
+        width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .nav-links {
@@ -1910,8 +1913,13 @@ h4 {
         display: flex;
     }
 
+    .navbar-right {
+        margin-left: auto;
+    }
+
     .menu-toggle {
         display: block;
+        padding-right: 0.5rem;
     }
 
     .nav-resume-btn {
