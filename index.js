@@ -1,32 +1,3 @@
-const skillIcons = {
-    "Python": "fa-brands fa-python",
-    "JavaScript": "fa-brands fa-js",
-    "C": "fa-solid fa-c",
-    "C++": "fa-solid fa-plus",
-    "Java": "fa-brands fa-java",
-    "Node.js": "fa-brands fa-node-js",
-    "Express.js": "fa-solid fa-server",
-    "MongoDB": "fa-solid fa-database",
-    "MySQL": "fa-solid fa-table",
-    "ChromaDB": "fa-solid fa-brain",
-    "Docker": "fa-brands fa-docker",
-    "Microsoft Azure": "fa-brands fa-microsoft",
-    "Excel (Pivot Tables)": "fa-solid fa-file-excel",
-    "Power BI": "fa-solid fa-chart-bar",
-    "Tableau": "fa-solid fa-chart-pie",
-    "Preprocessing": "fa-solid fa-filter",
-    "Clustering": "fa-solid fa-object-group",
-    "Classification": "fa-solid fa-tags",
-    "RAG": "fa-solid fa-book-open",
-    "LangChain": "fa-solid fa-link",
-    "LLaMA 3": "fa-solid fa-microchip",
-    "Leadership": "fa-solid fa-users",
-    "Adaptability": "fa-solid fa-flex",
-    "Teamwork": "fa-solid fa-people-group",
-    "Continuous Learning": "fa-solid fa-graduation-cap",
-    "Problem Solving": "fa-solid fa-lightbulb"
-};
-
 document.addEventListener('DOMContentLoaded', () => {
     loadSkills();
     loadProjects();
@@ -42,20 +13,15 @@ async function loadSkills() {
     try {
         const response = await fetch('data/skills.json');
         const skills = await response.json();
-        const track = document.getElementById('skills-track');
+        const container = document.getElementById('skills-grid');
 
-        // Flatten all skills into a single list for the marquee
-        const allSkills = Object.values(skills).flat();
+        if (!container) return;
 
-        // Double the skills for seamless loop
-        const displaySkills = [...allSkills, ...allSkills];
-
-        displaySkills.forEach(skill => {
-            const pill = document.createElement('div');
-            pill.className = 'skill-pill';
-            const iconClass = skillIcons[skill] || 'fa-solid fa-code';
-            pill.innerHTML = `<i class="${iconClass}"></i> <span>${skill}</span>`;
-            track.appendChild(pill);
+        skills.forEach(skill => {
+            const card = document.createElement('div');
+            card.className = 'skill-card-new';
+            card.innerHTML = `<i class="${skill.icon}"></i> <span>${skill.name}</span>`;
+            container.appendChild(card);
         });
     } catch (error) {
         console.error('Error loading skills:', error);
