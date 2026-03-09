@@ -896,8 +896,8 @@ h4 {
 }
 
 .skill-category-card {
-    background: rgba(13, 17, 28, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(30, 41, 59, 0.5);   /* Lighter background for better visibility */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Slightly brighter border */
     border-radius: 16px;
     padding: 2.5rem;
     transition: all 0.3s ease;
@@ -906,8 +906,8 @@ h4 {
 }
 
 .skill-category-card:hover {
-    background: rgba(18, 24, 43, 0.6);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(40, 50, 75, 0.7);  /* Lighter on hover */
+    border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
 }

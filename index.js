@@ -141,9 +141,10 @@ async function loadAchievements() {
 
             let eventsHtml = '';
             group.events.forEach(event => {
-                const imagesHtml = (event.images || []).map(src => `
+                const imgArray = (event.images && event.images.length > 0) ? event.images : ['']; // Force at least one empty string to render a box
+                const imagesHtml = imgArray.map(src => `
                     <div class="gallery-item glass">
-                        <img src="${src}" alt="${event.name}" loading="lazy">
+                        ${src ? `<img src="${src}" alt="${event.name}" loading="lazy">` : `<div style="width:100%;height:100%;background:rgba(255,255,255,0.02)"></div>`}
                     </div>
                 `).join('');
 
@@ -188,9 +189,10 @@ async function loadExtraCurriculars() {
 
             let eventsHtml = '';
             group.events.forEach(event => {
-                const imagesHtml = (event.images || []).map(src => `
+                const imgArray = (event.images && event.images.length > 0) ? event.images : ['']; // Force at least one empty string to render a box
+                const imagesHtml = imgArray.map(src => `
                     <div class="gallery-item glass">
-                        <img src="${src}" alt="${event.name}" loading="lazy">
+                        ${src ? `<img src="${src}" alt="${event.name}" loading="lazy">` : `<div style="width:100%;height:100%;background:rgba(255,255,255,0.02)"></div>`}
                     </div>
                 `).join('');
 

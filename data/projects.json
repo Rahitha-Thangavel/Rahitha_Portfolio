@@ -1,7 +1,7 @@
 [
   {
     "name": "Chess Academy Management System (On Progress)",
-    "description": "A comprehensive system for managing chess academies with automated scheduling and student tracking.",
+    "description": "Developed a web-based system to digitize student registration, attendance, payments, coach salary, and tournament management.",
     "tech": [
       "React",
       "Python",
@@ -18,7 +18,7 @@
   },
   {
     "name": "Gazette Chatbot",
-    "description": "AI-powered chatbot for querying government gazettes using RAG and Large Language Models.",
+    "description": "Built an AI-powered chatbot to search and generate context-aware responses from Sri Lanka's Legal Gazette documents.",
     "tech": [
       "Python",
       "LangChain",
@@ -36,7 +36,7 @@
   },
   {
     "name": "SmartStudyApp",
-    "description": "Android application to optimize study schedules and track academic progress.",
+    "description": "Created an Android study companion app for reading, annotating, and organizing study materials with personalized features.",
     "tech": [
       "Java",
       "Android SDK",
@@ -52,7 +52,7 @@
   },
   {
     "name": "CineBook",
-    "description": "Movie ticket booking platform with real-time availability and secure payments.",
+    "description": "Developed a microservices-based system to manage real-time movie seat bookings and prevent double reservations.",
     "tech": [
       "Java",
       "REST APIs",
@@ -69,7 +69,7 @@
   },
   {
     "name": "SthreeHub",
-    "description": "Cloud-hosted platform for women's empowerment and community engagement.",
+    "description": "Implemented a full-stack web app with secure user authentication, email verification, and role-based access control.",
     "tech": [
       "Node.js",
       "React.js",
@@ -86,7 +86,7 @@
   },
   {
     "name": "Gym Management System",
-    "description": "Desktop application for gym member management and subscription tracking.",
+    "description": "Built a multi-module system for members, instructors, staff, and admins to manage schedules, payments, and personal details.",
     "tech": [
       "Java",
       "SQL"
@@ -103,7 +103,7 @@
   },
   {
     "name": "The Venom Clash",
-    "description": "A competitive action game developed as a university project.",
+    "description": "Developed a two-player Snake game with interactive menus, score tracking, and collision detection in C++.",
     "tech": [
       "C++",
       "C"
