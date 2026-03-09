@@ -1,0 +1,42 @@
+[
+  {
+    "title": "National Level Hackathons",
+    "description": "Competing in premier innovation challenges across leading universities.",
+    "events": [
+      {
+        "name": "Venture Verse 2025",
+        "detail": "Top 10 Finalist at Sabaragamuwa University",
+        "images": [
+          "assets/achievements/venture_verse.jpeg",
+          "assets/achievements/venture_verse2.jpeg",
+          "assets/achievements/venture_verse3.jpeg"
+        ]
+      },
+      {
+        "name": "CodeFest 2025",
+        "detail": "Top Finalist in Technopreneur Challenge - SLIIT",
+        "images": [
+          "assets/achievements/codefest.png",
+          "assets/achievements/codefest2.png",
+          "assets/achievements/codefest3.jpeg"
+        ]
+      },
+      {
+        "name": "Ideasprint 2025",
+        "detail": "Top 10 Finalist - Department of Industrial Management",
+        "images": [
+          "assets/achievements/ideasprint25.jpeg",
+          "assets/achievements/ideasprint252.jpeg",
+          "assets/achievements/ideasprint253.jpeg"
+        ]
+      },
+      {
+        "name": "Ideasprint 2024",
+        "detail": "Top 10 Finalist - Department of Industrial Management",
+        "images": [
+          "assets/achievements/ideasprint24.jpeg"
+        ]
+      }
+    ]
+  }
+]

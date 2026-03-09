@@ -1,0 +1,22 @@
+[
+  {
+    "title": "The Complete Excel Pivot Table: Data Analysis and Reporting",
+    "platform": "Udemy",
+    "image": "assets/certs/excel_pivot.png"
+  },
+  {
+    "title": "Getting Started with Power BI",
+    "platform": "LinkedIn",
+    "image": "assets/certs/power_bi.png"
+  },
+  {
+    "title": "Data Analytics Master Class",
+    "platform": "NoviTech R&D Pvt Ltd",
+    "image": "assets/certs/data_analytics.png"
+  },
+  {
+    "title": "What is Data Science?",
+    "platform": "IBM",
+    "image": "assets/certs/ibm_ds.png"
+  }
+]

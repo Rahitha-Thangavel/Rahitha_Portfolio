@@ -1,0 +1,9 @@
+{
+  "programming": ["Python", "JavaScript", "C", "C++", "Java"],
+  "backend": ["Node.js", "Express.js"],
+  "databases": ["MongoDB", "MySQL", "ChromaDB"],
+  "devops_cloud": ["Docker", "Microsoft Azure"],
+  "analytics": ["Excel (Pivot Tables)", "Power BI", "Tableau"],
+  "ai_ml": ["Preprocessing", "Clustering", "Classification", "RAG", "LangChain", "LLaMA 3"],
+  "soft_skills": ["Leadership", "Adaptability", "Teamwork", "Continuous Learning", "Problem Solving"]
+}

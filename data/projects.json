@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Chess Academy Management System (On Progress)",
+    "description": "A comprehensive system for managing chess academies with automated scheduling and student tracking.",
+    "tech": [
+      "React",
+      "Python",
+      "MySQL",
+      "Figma"
+    ],
+    "date": "2024",
+    "images": [
+      "assets/projects/chess_academy.png",
+      "assets/projects/chess_academy2.png",
+      "assets/projects/chess_academy3.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel/chess-academy-management-system"
+  },
+  {
+    "name": "Gazette Chatbot",
+    "description": "AI-powered chatbot for querying government gazettes using RAG and Large Language Models.",
+    "tech": [
+      "Python",
+      "LangChain",
+      "LLaMA 3",
+      "ChromaDB",
+      "Streamlit"
+    ],
+    "date": "2024",
+    "images": [
+      "assets/projects/gazette_chatbot.png",
+      "assets/projects/gazette_chatbot2.png",
+      "assets/projects/gazette_chatbot3.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel/gazette-chatbot"
+  },
+  {
+    "name": "SmartStudyApp",
+    "description": "Android application to optimize study schedules and track academic progress.",
+    "tech": [
+      "Java",
+      "Android SDK",
+      "SQLite/Room"
+    ],
+    "date": "2023",
+    "images": [
+      "assets/projects/smart_study.png",
+      "assets/projects/smart_study2.png",
+      "assets/projects/smart_study3.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel/SmartStudyApp"
+  },
+  {
+    "name": "CineBook",
+    "description": "Movie ticket booking platform with real-time availability and secure payments.",
+    "tech": [
+      "Java",
+      "REST APIs",
+      "MySQL",
+      "NGINX"
+    ],
+    "date": "2023",
+    "images": [
+      "assets/projects/cinebook.png",
+      "assets/projects/cinebook2.png",
+      "assets/projects/cinebook3.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel"
+  },
+  {
+    "name": "SthreeHub",
+    "description": "Cloud-hosted platform for women's empowerment and community engagement.",
+    "tech": [
+      "Node.js",
+      "React.js",
+      "MongoDB",
+      "Azure"
+    ],
+    "date": "2024",
+    "images": [
+      "assets/projects/sthreehub.png",
+      "assets/projects/sthreehub2.png",
+      "assets/projects/sthreehub3.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel/SthreeHubAuthentication"
+  },
+  {
+    "name": "Gym Management System",
+    "description": "Desktop application for gym member management and subscription tracking.",
+    "tech": [
+      "Java",
+      "SQL"
+    ],
+    "date": "2023",
+    "images": [
+      "assets/projects/gym_mgmt.png",
+      "assets/projects/gym_mgmt2.png",
+      "assets/projects/gym_mgmt3.png",
+      "assets/projects/gym_mgmt4.png",
+      "assets/projects/gym_mgmt5.png"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel"
+  },
+  {
+    "name": "The Venom Clash",
+    "description": "A competitive action game developed as a university project.",
+    "tech": [
+      "C++",
+      "C"
+    ],
+    "date": "2022",
+    "images": [
+      "assets/projects/venom_clash.jpeg",
+      "assets/projects/venom_clash2.jpeg",
+      "assets/projects/venom_clash3.jpeg"
+    ],
+    "github": "https://github.com/Rahitha-Thangavel"
+  }
+]

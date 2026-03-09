@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Extra-Curricular Activities",
+    "description": "Active participation in university clubs and events.",
+    "events": [
+      {
+        "name": "Delegates Coordinator",
+        "detail": "BR Avenue 25/26 LED KLN Club",
+        "images": [
+          "assets/extra/delegates_coordinator.png",
+          "assets/extra/delegates_coordinator2.png"
+        ]
+      },
+      {
+        "name": "Chess Pool",
+        "detail": "Member at University of Kelaniya",
+        "images": [
+          "assets/extra/chess_pool.jpeg"
+        ]
+      },
+      {
+        "name": "Formal Compere",
+        "detail": "Moderator at SCSE LED Conference 2024, LED Conference 2025, Introduction Session of ReviveHacks on World Engineering Day 2025",
+        "images": [
+          "assets/extra/compere.png",
+          "assets/extra/compere2.jpeg",
+          "assets/extra/compere3.jpeg"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Athletics",
+    "description": "Women's Champion in the Inter Faculty Tournament 2025 for Javelin and Discus Throw.",
+    "events": [
+      {
+        "name": "Inter Faculty Tournament 2025",
+        "detail": "Women's Champion — Javelin & Discus Throw",
+        "images": [
+          "assets/extra/athletics.jpg",
+          "assets/extra/athletics2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leadership at School",
+    "description": "Foundational leadership roles during primary and secondary education.",
+    "events": [
+      {
+        "name": "School Leadership",
+        "detail": "Prefect & House Captain, Chess Vice Captain"
+      }
+    ]
+  }
+]
