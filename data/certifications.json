@@ -1,15 +1,39 @@
 [
   {
-    "title": "The Complete Excel Pivot Table: Data Analysis and Reporting",
-    "platform": "Udemy",
-    "image": "assets/certs/excel_pivot.png",
-    "link": "#"
+    "title": "Introduction to Prompt Engineering for Generative AI",
+    "platform": "LinkedIn",
+    "image": "assets/certs/prompt.png",
+    "link": "https://www.linkedin.com/learning/certificates/01b7866988decadfb2325b049634b1271cfd699d09abda394d2d38a93d12c1b1?trk=share_certificate"
+  },
+  {
+    "title": "Introduction to Large Language Models",
+    "platform": "LinkedIn",
+    "image": "assets/certs/llm.png",
+    "link": "https://www.linkedin.com/learning/certificates/ae8de4f24e4f288b04f17a9aedaf22b44afb87aca56b7ead5f2f890420eda610?trk=share_certificate"
+  },
+  {
+    "title": "What is Data Science?",
+    "platform": "IBM",
+    "image": "assets/certs/ibm_ds.png",
+    "link": "https://coursera.org/verify/DHA28411V0AC"
+  },
+  {
+    "title": "Programming in Python",
+    "platform": "Meta",
+    "image": "assets/certs/python.png",
+    "link": "https://coursera.org/verify/GTM05JE3DSLI"
   },
   {
     "title": "Getting Started with Power BI",
     "platform": "LinkedIn",
     "image": "assets/certs/power_bi.png",
-    "link": "#"
+    "link": "https://www.linkedin.com/learning/certificates/6768d6f1ee2b735c685e9fb2ae8f64465c60c52258998fa1900197996150bfa5?trk=share_certificate"
+  },
+  {
+    "title": "The Complete Excel Pivot Table: Data Analysis and Reporting",
+    "platform": "Udemy",
+    "image": "assets/certs/excel_pivot.png",
+    "link": "https://www.udemy.com/certificate/UC-d4d6b875-6276-46b6-81a3-4615f501a625/"
   },
   {
     "title": "Data Analytics Master Class",
@@ -18,27 +42,9 @@
     "link": "#"
   },
   {
-    "title": "What is Data Science?",
-    "platform": "IBM",
-    "image": "assets/certs/ibm_ds.png",
-    "link": "#"
-  },
-  {
-    "title": "Introduction to Large Language Models",
-    "platform": "LinkedIn",
-    "image": "assets/certs/llm.png",
-    "link": "#"
-  },
-  {
-    "title": "Programming in Python",
-    "platform": "Meta",
-    "image": "assets/certs/python.png",
-    "link": "#"
-  },
-  {
-    "title": "Introduction to Prompt Engineering for Generative AI",
-    "platform": "LinkedIn",
-    "image": "assets/certs/prompt.png",
+    "title": "Startup essential Program ",
+    "platform": "Uki Technology School",
+    "image": "assets/certs/startup.png",
     "link": "#"
   }
 ]

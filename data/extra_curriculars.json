@@ -12,8 +12,8 @@
         ]
       },
       {
-        "name": "Chess Pool",
-        "detail": "Member at University of Kelaniya",
+        "name": "Chess Pool Member",
+        "detail": "University of Kelaniya 24/25",
         "images": [
           "assets/extra/chess_pool.jpeg"
         ]
@@ -44,12 +44,25 @@
     ]
   },
   {
+    "title": "Outbound Training Programme",
+    "description": "Leadership, Teamwork and Problem-Solving Skills build by Action Park.",
+    "events": [
+      {
+        "name": "Outbound Training Programme",
+        "detail": "Department of Industrial Management, University of Kelaniya, Sri Lanka",
+        "images": [
+          "assets/extra/outbound.png"
+        ]
+      }
+    ]
+  },
+  {
     "title": "Leadership at School",
     "description": "Foundational leadership roles during primary and secondary education.",
     "events": [
       {
         "name": "School Leadership",
-        "detail": "Prefect & House Captain, Chess Vice Captain"
+        "detail": "Prefect & House Captain, Chess Vice Captain, Member in Athletics Team(Javelin) and Tamil Union Vice President."
       }
     ]
   }
