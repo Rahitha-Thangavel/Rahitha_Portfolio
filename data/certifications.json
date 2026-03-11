@@ -2,21 +2,43 @@
   {
     "title": "The Complete Excel Pivot Table: Data Analysis and Reporting",
     "platform": "Udemy",
-    "image": "assets/certs/excel_pivot.png"
+    "image": "assets/certs/excel_pivot.png",
+    "link": "#"
   },
   {
     "title": "Getting Started with Power BI",
     "platform": "LinkedIn",
-    "image": "assets/certs/power_bi.png"
+    "image": "assets/certs/power_bi.png",
+    "link": "#"
   },
   {
     "title": "Data Analytics Master Class",
     "platform": "NoviTech R&D Pvt Ltd",
-    "image": "assets/certs/data_analytics.png"
+    "image": "assets/certs/data_analytics.png",
+    "link": "#"
   },
   {
     "title": "What is Data Science?",
     "platform": "IBM",
-    "image": "assets/certs/ibm_ds.png"
+    "image": "assets/certs/ibm_ds.png",
+    "link": "#"
+  },
+  {
+    "title": "Introduction to Large Language Models",
+    "platform": "LinkedIn",
+    "image": "assets/certs/llm.png",
+    "link": "#"
+  },
+  {
+    "title": "Programming in Python",
+    "platform": "Meta",
+    "image": "assets/certs/python.png",
+    "link": "#"
+  },
+  {
+    "title": "Introduction to Prompt Engineering for Generative AI",
+    "platform": "LinkedIn",
+    "image": "assets/certs/prompt.png",
+    "link": "#"
   }
 ]

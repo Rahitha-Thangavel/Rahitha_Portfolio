@@ -115,7 +115,9 @@ async function loadCertifications() {
         const container = document.getElementById('certs-container');
 
         certs.forEach(cert => {
-            const certItem = document.createElement('div');
+            const certItem = document.createElement('a');
+            certItem.href = cert.link || '#';
+            certItem.target = '_blank';
             certItem.className = 'cert-card glass';
             certItem.innerHTML = `
                 <img src="${cert.image}" alt="${cert.title}">
