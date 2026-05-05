@@ -11,12 +11,11 @@
       "Streamlit"
     ],
     "date": "2026",
-    "status": "Top 10 Finalist",
     "images": [],
-    "github": null
+    "github": "https://github.com/Rahitha-Thangavel/Hemas-PharmaComply-AI"
   },
   {
-    "name": "Machine Learning Project (Group)",
+    "name": "Machine Learning Project (On Progress)",
     "description": "Led the data preprocessing pipeline by handling missing values, removing duplicates, and preparing behavioural and demographic data for modelling. Also performed feature scaling and feature engineering, implemented K-Means and Hierarchical clustering, and supported the team's classification and regression-based final predictions.",
     "tech": [
       "Python",
@@ -25,7 +24,6 @@
       "NumPy"
     ],
     "date": "Feb 2026 - Present",
-    "status": "On Progress",
     "images": [],
     "github": null
   },
@@ -39,7 +37,6 @@
       "Figma"
     ],
     "date": "2024",
-    "status": "Completed",
     "images": [
       "assets/projects/chess_academy.png",
       "assets/projects/chess_academy2.png",
@@ -47,6 +44,7 @@
     ],
     "github": "https://github.com/Rahitha-Thangavel/chess-academy-management-system"
   },
+  
   {
     "name": "Gazette Chatbot",
     "description": "Built an AI-powered chatbot to search and generate context-aware responses from Sri Lanka's Legal Gazette documents.",

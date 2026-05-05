@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTestimonials();
     initRatings();
     initTestimonialSlider();
+    initResumeDropdowns();
 });
 
 async function loadSkills() {
@@ -98,15 +99,10 @@ async function loadProjects() {
                 : `<div class="project-title-link project-title-static">
                         <h3>${project.name}</h3>
                     </div>`;
-            const statusHtml = project.status
-                ? `<span class="project-status-badge">${project.status}</span>`
-                : '';
-
             card.innerHTML = `
                 <div class="project-content">
                     <div class="project-header">
                         ${projectLink}
-                        ${statusHtml}
                     </div>
                     <div class="project-description">
                         <p>${project.description}</p>
@@ -273,6 +269,55 @@ async function loadExtraCurriculars() {
     } catch (error) {
         console.error('Error loading extra-curriculars:', error);
     }
+}
+
+function initResumeDropdowns() {
+    const dropdowns = document.querySelectorAll('.resume-dropdown');
+    if (!dropdowns.length) return;
+
+    const closeAll = (except = null) => {
+        dropdowns.forEach(dropdown => {
+            if (dropdown !== except) {
+                dropdown.removeAttribute('open');
+            }
+        });
+    };
+
+    dropdowns.forEach(dropdown => {
+        const summary = dropdown.querySelector('summary');
+        const menuLinks = dropdown.querySelectorAll('.resume-menu a');
+
+        if (summary) {
+            summary.addEventListener('click', (event) => {
+                event.preventDefault();
+                const isOpen = dropdown.hasAttribute('open');
+                closeAll(dropdown);
+                if (!isOpen) {
+                    dropdown.setAttribute('open', '');
+                } else {
+                    dropdown.removeAttribute('open');
+                }
+            });
+        }
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                dropdown.removeAttribute('open');
+            });
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('.resume-dropdown')) {
+            closeAll();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeAll();
+        }
+    });
 }
 
 
