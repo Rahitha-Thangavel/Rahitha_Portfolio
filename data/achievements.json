@@ -1,5 +1,27 @@
 [
   {
+    "title": "Featured Milestones",
+    "description": "A snapshot of the most recent achievements I'm proud to highlight first.",
+    "events": [
+      {
+        "name": "Hemas AITHON 2026 Finalist",
+        "detail": "Top 10 among 30+ teams with Hemas PharmaComply AI",
+        "images": [
+          "assets/achievements/hemas_aithon_2026_1.jpg",
+          "assets/achievements/hemas_aithon_2026_2.jpg",
+          "assets/achievements/hemas_aithon_2026_3.jpg"
+        ]
+      },
+      {
+        "name": "Dean's List - First Year",
+        "detail": "Academic recognition for strong first-year performance",
+        "images": [
+          "assets/achievements/deans_list_first_year.jpg"
+        ]
+      }
+    ]
+  },
+  {
     "title": "National Level Hackathons",
     "description": "Competing in premier innovation challenges across leading universities.",
     "events": [

@@ -54,16 +54,28 @@ async function loadSkills() {
 
 const techColors = {
     "Python": "#3572A5",
+    "Python (Strong)": "#3572A5",
     "JavaScript": "#f1e05a",
     "Java": "#b07219",
     "C": "#555555",
     "C++": "#f34b7d",
     "React": "#61dafb",
+    "React.js": "#61dafb",
     "Node.js": "#339933",
+    "Express.js": "#999999",
     "HTML": "#e34c26",
     "CSS": "#563d7c",
     "Jupyter Notebook": "#DA5B0B",
-    "SQL": "#e38c00"
+    "SQL": "#e38c00",
+    "Llama 3": "#ff8c42",
+    "LLaMA 3": "#ff8c42",
+    "ChromaDB": "#6f42c1",
+    "Tesseract OCR": "#4caf50",
+    "Streamlit": "#ff4b4b",
+    "Scikit-learn": "#ffca28",
+    "Pandas": "#150458",
+    "NumPy": "#013243",
+    "REST APIs": "#00a0d1"
 };
 
 async function loadProjects() {
@@ -78,14 +90,23 @@ async function loadProjects() {
 
             const mainTech = project.tech[0] || 'Code';
             const techColor = techColors[mainTech] || '#cccccc';
+            const projectLink = project.github && project.github !== '#'
+                ? `<a href="${project.github}" target="_blank" class="project-title-link">
+                        <h3>${project.name}</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>`
+                : `<div class="project-title-link project-title-static">
+                        <h3>${project.name}</h3>
+                    </div>`;
+            const statusHtml = project.status
+                ? `<span class="project-status-badge">${project.status}</span>`
+                : '';
 
             card.innerHTML = `
                 <div class="project-content">
                     <div class="project-header">
-                        <a href="${project.github}" target="_blank" class="project-title-link">
-                            <h3>${project.name}</h3>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
+                        ${projectLink}
+                        ${statusHtml}
                     </div>
                     <div class="project-description">
                         <p>${project.description}</p>
@@ -115,14 +136,27 @@ async function loadCertifications() {
         const container = document.getElementById('certs-container');
 
         certs.forEach(cert => {
-            const certItem = document.createElement('a');
-            certItem.href = cert.link || '#';
-            certItem.target = '_blank';
+            const hasLink = cert.link && cert.link !== '#';
+            const certItem = document.createElement(hasLink ? 'a' : 'div');
+            if (hasLink) {
+                certItem.href = cert.link;
+                certItem.target = '_blank';
+                certItem.rel = 'noreferrer';
+            }
             certItem.className = 'cert-card glass';
+            const mediaHtml = cert.image
+                ? `<img src="${cert.image}" alt="${cert.title}" onerror="this.style.display='none'">`
+                : `<div class="cert-card-icon"><i class="fa-solid fa-certificate"></i></div>`;
+            const descriptionHtml = cert.description
+                ? `<p class="cert-description">${cert.description}</p>`
+                : '';
             certItem.innerHTML = `
-                <img src="${cert.image}" alt="${cert.title}">
-                <h4>${cert.title}</h4>
-                <p>${cert.platform}</p>
+                ${mediaHtml}
+                <div class="cert-content">
+                    <h4>${cert.title}</h4>
+                    <p class="cert-platform">${cert.platform}</p>
+                    ${descriptionHtml}
+                </div>
             `;
             container.appendChild(certItem);
         });
@@ -148,7 +182,7 @@ async function loadAchievements() {
                 if (event.images && event.images.length > 0) {
                     const imagesHtml = event.images.map(src => `
                         <div class="gallery-item glass">
-                            <img src="${src}" alt="${event.name}" loading="lazy">
+                            <img src="${src}" alt="${event.name}" loading="lazy" onerror="this.closest('.gallery-item').style.display='none'">
                         </div>
                     `).join('');
                     
@@ -203,7 +237,7 @@ async function loadExtraCurriculars() {
                 if (event.images && event.images.length > 0) {
                     const imagesHtml = event.images.map(src => `
                         <div class="gallery-item glass">
-                            <img src="${src}" alt="${event.name}" loading="lazy">
+                            <img src="${src}" alt="${event.name}" loading="lazy" onerror="this.closest('.gallery-item').style.display='none'">
                         </div>
                     `).join('');
                     

@@ -1,21 +1,52 @@
 [
   {
-    "category": "Programming Languages",
-    "icon": "fa-solid fa-code",
-    "iconColor": "#00d2ff",
+    "category": "AI & LLMs",
+    "icon": "fa-solid fa-robot",
+    "iconColor": "#ff3366",
     "skills": [
-      { "name": "Python", "icon": "devicon-python-plain colored" },
-      { "name": "JavaScript", "icon": "devicon-javascript-plain colored" },
-      { "name": "C", "icon": "devicon-c-line colored" },
-      { "name": "C++", "icon": "devicon-cplusplus-line colored" },
-      { "name": "Java", "icon": "devicon-java-plain-wordmark colored" }
+      { "name": "RAG", "icon": "fa-solid fa-book-open" },
+      { "name": "LangChain", "icon": "fa-solid fa-link" },
+      { "name": "Llama 3", "icon": "fa-solid fa-brain" },
+      { "name": "Prompt Engineering", "icon": "fa-solid fa-comment-dots" },
+      { "name": "Vector Databases", "icon": "fa-solid fa-database" },
+      { "name": "ChromaDB", "icon": "fa-solid fa-cubes" },
+      { "name": "HuggingFace Embeddings", "icon": "fa-solid fa-wave-square" }
     ]
   },
   {
-    "category": "Backend",
+    "category": "Machine Learning",
+    "icon": "fa-solid fa-cogs",
+    "iconColor": "#9b51e0",
+    "skills": [
+      { "name": "Scikit-learn", "icon": "fa-solid fa-diagram-project" },
+      { "name": "Data Preprocessing", "icon": "fa-solid fa-filter" },
+      { "name": "Feature Engineering", "icon": "fa-solid fa-wand-magic-sparkles" },
+      { "name": "K-Means Clustering", "icon": "fa-solid fa-object-group" },
+      { "name": "Hierarchical Clustering", "icon": "fa-solid fa-sitemap" },
+      { "name": "Classification", "icon": "fa-solid fa-tags" },
+      { "name": "Regression", "icon": "fa-solid fa-chart-line" },
+      { "name": "Pandas", "icon": "fa-solid fa-table" },
+      { "name": "NumPy", "icon": "fa-solid fa-calculator" }
+    ]
+  },
+  {
+    "category": "Programming",
+    "icon": "fa-solid fa-code",
+    "iconColor": "#00d2ff",
+    "skills": [
+      { "name": "Python (Strong)", "icon": "devicon-python-plain colored" },
+      { "name": "Java", "icon": "devicon-java-plain-wordmark colored" },
+      { "name": "JavaScript", "icon": "devicon-javascript-plain colored" },
+      { "name": "C", "icon": "devicon-c-line colored" },
+      { "name": "C++", "icon": "devicon-cplusplus-line colored" }
+    ]
+  },
+  {
+    "category": "Backend APIs",
     "icon": "fa-solid fa-server",
     "iconColor": "#2ede98",
     "skills": [
+      { "name": "REST APIs", "icon": "fa-solid fa-plug" },
       { "name": "Node.js", "icon": "devicon-nodejs-plain-wordmark colored" },
       { "name": "Express.js", "icon": "devicon-express-original" }
     ]
@@ -40,54 +71,14 @@
     ]
   },
   {
-    "category": "Version Control",
-    "icon": "fa-solid fa-code-branch",
-    "iconColor": "#e24329",
-    "skills": [
-      { "name": "Git", "icon": "devicon-git-plain-wordmark colored" },
-      { "name": "GitHub", "icon": "devicon-github-original-wordmark" }
-    ]
-  },
-  {
-    "category": "Analytical Skills",
-    "icon": "fa-solid fa-chart-line",
-    "iconColor": "#ff0080",
-    "skills": [
-      { "name": "Excel (Pivot Tables)", "icon": "devicon-xcode-plain colored" },
-      { "name": "Power BI", "icon": "fa-solid fa-chart-bar" },
-      { "name": "Tableau", "icon": "fa-solid fa-chart-pie" }
-    ]
-  },
-  {
-    "category": "ML Concepts",
-    "icon": "fa-solid fa-cogs",
-    "iconColor": "#9b51e0",
-    "skills": [
-      { "name": "Preprocessing", "icon": "fa-solid fa-filter" },
-      { "name": "Clustering", "icon": "fa-solid fa-object-group" },
-      { "name": "Classification", "icon": "fa-solid fa-tags" }
-    ]
-  },
-  {
-    "category": "Artificial Intelligence",
-    "icon": "fa-solid fa-robot",
-    "iconColor": "#ff3366",
-    "skills": [
-      { "name": "RAG", "icon": "fa-solid fa-book-open" },
-      { "name": "LangChain", "icon": "fa-solid fa-link" },
-      { "name": "LLaMA 3", "icon": "fa-solid fa-microchip" }
-    ]
-  },
-  {
     "category": "Soft Skills",
     "icon": "fa-solid fa-users",
     "iconColor": "#ff9900",
     "skills": [
       { "name": "Leadership", "icon": "fa-solid fa-users-cog" },
       { "name": "Adaptability", "icon": "fa-solid fa-exchange-alt" },
-      { "name": "Teamwork", "icon": "fa-solid fa-people-carry" },
-      { "name": "Continuous Learning", "icon": "fa-solid fa-graduation-cap" },
-      { "name": "Problem Solving", "icon": "fa-solid fa-lightbulb" }
+      { "name": "Problem Solving", "icon": "fa-solid fa-lightbulb" },
+      { "name": "Continuous Learning", "icon": "fa-solid fa-graduation-cap" }
     ]
   }
 ]
